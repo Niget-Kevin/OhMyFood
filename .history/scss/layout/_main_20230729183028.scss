@@ -88,7 +88,7 @@
 .restaurants-container{
     background-color:$bg-light-gray;
     display: grid;
-    gridcolumns: 1fr; 
+    grid-column: 1fr; 
     padding: 60px 20px;
 }  
 .restaurants-container-card {
