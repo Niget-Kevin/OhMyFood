@@ -10,9 +10,7 @@
     color: $dark-grey;
     font-weight: bold;
 }
-.location-container-title {
-    font-size: 16px;
-}
+location-container-title
 .hero-container {
     @extend %flex-center;
     flex-direction: column;
@@ -141,7 +139,7 @@
 .restaurants-card-subtitle{
     margin: 0;
 }
-.restaurants-heart {
+.restaurants-heart{
     padding: 0;
     border:0px;
     background-color:$bg-crd;
@@ -151,7 +149,7 @@
 }
 .fa-heart {
     font-size: 22px;
-
+    
 }
 
 
