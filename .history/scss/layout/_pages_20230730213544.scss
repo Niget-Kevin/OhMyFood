@@ -1,0 +1,77 @@
+
+
+.restaurant-main{
+    gap: 40px;
+    padding: 30px 20px 40px 20px;
+    background-color: $bg-light-gray;
+    border-radius: 24px 24px 0px 0px;
+    position: relative;
+    margin-top: -55px;
+    display: flex;
+    flex-direction: column;
+}
+.restaurant-main  {
+    .h1, h2, h3, p{
+    margin: 0;
+    }
+}
+
+.restaurant-img{
+    object-fit: cover;
+    width: 100%;
+    height: 275px;
+}
+.restaurant-banner {
+    display: flex;    
+    gap: 24px;   
+}
+
+.restaurant-title-h1 {
+    font-family: $Shrikhand;
+    font-weight: 400;
+    margin: 0;
+}
+.restaurant-heart{
+    border: 0px;
+    background-color: $bg-light-gray;
+    cursor: pointer;
+}
+
+.restaurant-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.restaurant-title-h2 {
+    
+    position: relative;
+    display: inline-block;
+}
+.restaurant-title-h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    : px;
+    height: 3px; /* épaisseur de la ligne de soulignement */
+    width: 10%; /* pourcentage du soulignement */
+    background-color: $btn-new; /* couleur de la ligne de soulignement */
+}
+.restaurant-card {
+    display: flex;
+    background-color: $bg-crd;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 15px;
+}
+.card-money {
+    display: flex;
+    align-items: flex-end;
+}
+
+.validation{
+    @extend %flex-center;
+}
+.restaurant-button {
+    @extend %hero-button;
+}
