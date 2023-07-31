@@ -14,6 +14,14 @@
   background-color: white;
 }
 
+.body {
+  font-family: roboto;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  background-color: white;
+}
+
 .validation, .onboarding-button .number, .hero-container, .location-container, .return, .header, .restaurant-button, .hero-button {
   display: flex;
   justify-content: center;
