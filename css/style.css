@@ -10,6 +10,7 @@
   font-family: roboto;
   margin: 0;
   padding: 0;
+  min-width: 320px;
 }
 
 .validation, .onboarding-button .number, .hero-container, .location-container, .return, .header, .restaurant-button, .hero-button {
@@ -209,6 +210,56 @@
   font-size: 22px;
 }
 
+@media (min-width: 767.98px) {
+  .hero-container {
+    gap: 18px;
+    padding: 30px 0px 30px 0px;
+  }
+  .hero-container .hero-title, .hero-container .hero-subtitle {
+    width: auto;
+    margin: 0;
+    height: auto;
+  }
+  .hero-button {
+    margin: 0px 0px;
+  }
+  .onboarding-container, .onboarding-title, .restaurants-title, .restaurants-container, .restaurants-container-card {
+    display: grid;
+    justify-content: center;
+  }
+  .restaurants-container-card {
+    grid-template-columns: 1fr;
+    width: 535px;
+  }
+}
+@media (min-width: 1024px) {
+  .body {
+    justify-content: center;
+  }
+  .onboarding-container {
+    gap: 25px;
+    margin: 50px 0px;
+  }
+  .onboarding-title {
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .onboarding-container-button {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 36px;
+  }
+  .restaurants-container {
+    padding: 0;
+  }
+  .restaurants-title {
+    justify-content: start;
+  }
+  .restaurants-container-card {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 100px;
+    width: 100%;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -236,6 +287,15 @@
   color: white;
 }
 
+@media (min-width: 767.98px) {
+  .footer {
+    align-items: center;
+  }
+  .footer-link {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
 .restaurant-main {
   gap: 40px;
   padding: 30px 20px 40px 20px;
