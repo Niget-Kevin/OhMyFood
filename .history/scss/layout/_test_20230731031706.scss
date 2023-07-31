@@ -1,0 +1,9 @@
+.restaurants-heart:hover,:active {
+    background-color: $btn-gradient;
+    grid-area: 1/2;
+    transition: color 0.2s ease-in-out;
+    opacity: 0;
+    transition: .5s;
+    content: "";
+    : linear-gradient(0deg,#9356dc,#ff79da);
+}

@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   min-width: 320px;
+  background-color: white;
 }
 
 .validation, .onboarding-button .number, .hero-container, .location-container, .return, .header, .restaurant-button, .hero-button {
@@ -197,15 +198,6 @@
   margin: 0;
 }
 
-.restaurants-heart {
-  padding: 0;
-  border: 0px;
-  background-color: white;
-  position: absolute;
-  bottom: 40px;
-  right: 20px;
-}
-
 .fa-heart {
   font-size: 22px;
 }
@@ -382,4 +374,23 @@
   align-items: flex-end;
   font-weight: 700;
   color: #353535;
+}
+
+.restaurants-heart {
+  padding: 0;
+  border: 0px;
+  background-color: white;
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+}
+
+.fa-heart:active {
+  color: linear-gradient(0deg, #9356dc, #ff79da);
+  transition: 0.5s;
+}
+
+.restaurants-heart, .fa-regular, .fa-heart:hover {
+  background-color: linear-gradient(0deg, #9356dc, #ff79da);
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */
