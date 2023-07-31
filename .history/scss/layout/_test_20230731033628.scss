@@ -1,0 +1,29 @@
+
+.restaurants-heart {
+    padding: 0;
+    border:0px;
+    background-color:$bg-crd;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    &:hover{
+    background-color: $btn-gradient;
+    grid-area: 1/2;
+    transition: color 0.2s ease-in-out;
+    opacity: 0;
+    transition: .5s;
+    content: "";
+    //color: linear-gradient(0deg,#9356dc,#ff79da);
+    }
+    
+
+}
+.fa-heart:active{
+    background-color: $btn-gradient;
+    grid-area: 1/2;
+    transition: color 0.2s ease-in-out;
+    color: linear-gradient(0deg,#9356dc,#ff79da);
+    transition: .5s;
+    content: "";
+    
+    }
