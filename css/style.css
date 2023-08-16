@@ -393,4 +393,23 @@
 .restaurants-heart, .fa-regular, .fa-heart:hover {
   background-color: linear-gradient(0deg, #9356dc, #ff79da);
   transition: 0.5s;
+}
+
+.restaurants-heart {
+  padding: 0;
+  border: 0px;
+  background-color: white;
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+}
+
+.fa-heart:active {
+  color: linear-gradient(0deg, #9356dc, #ff79da);
+  transition: 0.5s;
+}
+
+.restaurants-heart, .fa-regular, .fa-heart:hover {
+  background-color: linear-gradient(0deg, #9356dc, #ff79da);
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */
