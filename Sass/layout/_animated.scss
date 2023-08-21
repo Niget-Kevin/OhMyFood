@@ -124,7 +124,7 @@ button {
 body .loading_page {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,25 +143,22 @@ body .loading_page {
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 1;
+ 
   background-color: transparent;
   -webkit-animation: opacity_reverse 500ms 3000ms linear both;
   animation: opacity_reverse 500ms 3000ms linear both;
   background-color: white;
-  animation: hideLoader 5500ms forwards;
+  
 }
-body .loading_page::after {
-  display: none;
-  z-index: -1;
-}
+
 header,main,footer {
-  animation: z-index 0ms 3500ms linear both;
+  // animation: z-index 0ms 3500ms linear both;
 }
 body .loading_page .container {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 100%;
-  max-width: 340px;
+  height: 100%;
+  width: 100%;  
   padding: 15px;  
   display: flex;
   -webkit-box-orient: horizontal;
@@ -262,6 +259,7 @@ body .index_main .result .container__result .restaurant__img a .enabled {
   }
   100% {
     opacity: 0;
+    display: none;
 }
 }
 
@@ -275,22 +273,4 @@ body .index_main .result .container__result .restaurant__img a .enabled {
 }
 }
 
-@keyframes z-index {
-  0% {
-    z-index:0;
-  }
-  100% {
-    z-index:2;
-  }
-  
-}
 
-@keyframes hideLoader {
-  0%, 99% {
-    pointer-events: auto;
-  }
-  100% {
-    pointer-events: none;
-    opacity: 0;
-  }
-}

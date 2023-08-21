@@ -1,7 +1,7 @@
 .header {
     @extend %flex-center;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    animation: z-index 0ms 3500ms linear backwards;
+   
 }
 
 .header__logo {
