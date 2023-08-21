@@ -1,0 +1,34 @@
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+%hero-btn{
+    border-radius: 25px;
+    background: $btn-gradient;
+    width: 218px;
+    height: 50px;
+    color:$txt-white;
+    @extend %flex-center;
+    text-decoration: none;
+}
+
+
+
+  $breakpoints: (
+	"phone-down": 500px,
+	"tablet-up": 768px,
+	"tablet-down": 900px,
+	"desktop-up": 1024px,
+	"desktop-down": 1280px,
+	"widescreen-up": 1440px
+  );
+  
+  @mixin media-min($_key) {
+	@media screen and (min-width: map-get($breakpoints, $_key)) {
+	  &{ @content; }
+	}
+  }
+
