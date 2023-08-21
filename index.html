@@ -9,85 +9,119 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body class="body">
+    <div class="loading_page">             
+        <div class="container"> 
+            <h1>OhMyFood</h1>              
+            <div class="plate_out">
+                <div class="plate_in">
+                    <i class="fa-solid fa-bread-slice food" aria-hidden="true"></i>
+                    <div class="hole hole_1"></div>
+                    <div class="hole hole_2"></div>
+                    <div class="hole hole_3"></div>
+                </div>
+            </div>            
+        </div>
+    </div>    
     <header class="header">
-        <img class="header-logo" src="Images-et-textes-Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+        <img class="header__logo" src="Images-et-textes-Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo OhMyFood">
     </header>
     <main>
-        <section class="location-container">
+        <section class="location">
             <i class="fa-solid fa-location-dot"></i>
-            <h2 class="location-container-title">Paris, Belleville</h2>
+            <h2 class="location__title">Paris, Belleville</h2>
         </section>
-        <section class="hero-container">
-            <h1 class="hero-title">Réservez le menu qui vous convient</h1>
-            <p class="hero-subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <a class="hero-button" href="">Explorer nos restaurants</a>
+        <section class="hero">
+            <h1 class="hero__title">Réservez le menu qui vous convient</h1>
+            <p class="hero__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <a class="hero__btn" href="">Explorer nos restaurants</a>
         </section>
-        <section class="onboarding-container">
-            <h2 class="onboarding-title">Fonctionnement</h2>
-            <div class="onboarding-container-button">
-                <div class="onboarding-button">
+        <section class="onboarding__container">
+            <h2 class="onboarding__title">Fonctionnement</h2>
+            <div class="onboarding__container__btn">
+                <div class="onboarding__btn">
                     <p class="number">1</p>
                     <i class="fa-solid fa-mobile-screen-button"></i>
-                    <h3 class="onboarding-txt">Choisissez un restaurant</h3>
+                    <h3 class="onboarding__txt">Choisissez un restaurant</h3>
                 </div>
-                <div class="onboarding-button">
+                <div class="onboarding__btn">
                     <p class="number">2</p>
                     <i class="fa-solid fa-list"></i>
-                    <h3 class="onboarding-txt">Composez votre menu</h3>
+                    <h3 class="onboarding__txt">Composez votre menu</h3>
                 </div>
-                <div class="onboarding-button">
+                <div class="onboarding__btn">
                     <p class="number">3</p>
                     <i class="fa-solid fa-store"></i>
-                    <h3 class="onboarding-txt">Dégustez au restaurant</h3>
+                    <h3 class="onboarding__txt">Dégustez au restaurant</h3>
                 </div>
             </div>
         </section>
-        <section class="restaurants-container">
-            <h2 class="restaurants-title">Restaurants</h2>
-            <div class="restaurants-container-card">
-                <article class="restaurants-card">
-                    <a class="restaurants-card-link" href="pages/Menu-La-palette-du-goût.html">
-                        <div class="restaurants-new">nouveau</div>
-                        <img class="restaurants-img" src="Images-et-textes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-                        <div class="restaurants-card-description">                                                          
-                            <h3 class="restaurants-card-title">La palette du goût</h3>
-                            <p class="restaurants-card-subtitle">Ménilmontant</p>    
-                            <i class="restaurants-heart fa-regular fa-heart"></i>                       
+        <section class="restaurants__container">
+            <h2 class="restaurants__title">Restaurants</h2>
+            <div class="restaurants__container__card">
+                <article class="restaurants__card">
+                    <a class="restaurants__card__link" href="Menu/Menu-La-palette-du-goût.html">
+                        <div class="restaurants__new">nouveau</div>
+                        <img class="restaurants__img" src="Images-et-textes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                        <div class="restaurants__card__description">  
+                            <div class="restaurants__card__txt">                                                       
+                                <h3 class="restaurants__card__title">La palette du goût</h3>
+                                <p class="restaurants__card__subtitle">Ménilmontant</p>   
+                            </div>
+                            <div class="restaurants__card__heart"> 
+                                <i class="restaurants__heart far fa-heart"></i> 
+                                <i class="restaurants__heart--full fas fa-heart"></i> 
+                            </div>                                                                                        
                         </div>
                     </a>   
                 </article>
-                <article class="restaurants-card">
-                    <a class="restaurants-card-link" href="pages/Menu-La-note-enchnantée.html">
-                        <div class="restaurants-new">nouveau</div>
-                        <img class="restaurants-img" src="Images-et-textes-Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
-                        <div class="restaurants-card-description">                                                          
-                            <h3 class="restaurants-card-title">La note enchantée</h3>
-                            <p class="restaurants-card-subtitle">Charonne</p>   
-                            <i class="restaurants-heart fa-regular fa-heart"></i>                         
+                <article class="restaurants__card">
+                    <a class="restaurants__card__link" href="Menu/Menu-La-note-enchnantée.html">
+                        <div class="restaurants__new">nouveau</div>
+                        <img class="restaurants__img" src="Images-et-textes-Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                        <div class="restaurants__card__description">  
+                            <div class="restaurants__card__txt">                                                       
+                                <h3 class="restaurants__card__title">La note enchantée</h3>
+                                <p class="restaurants__card__subtitle">Charonne</p>   
+                            </div>
+                            <div class="restaurants__card__heart"> 
+                                <i class="restaurants__heart far fa-heart"></i> 
+                                <i class="restaurants__heart--full fas fa-heart"></i> 
+                            </div>                       
                         </div>
                     </a>
                 </article>      
-                <article class="restaurants-card">
+                <article class="restaurants__card">
                     <div>
-                    <a class="restaurants-card-link" href="pages/Menu-À-la-française.html">                        
-                        <img class="restaurants-img" src="Images-et-textes-Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
-                        <div class="restaurants-card-description">                                                          
-                            <h3 class="restaurants-card-title">À la française</h3>
-                            <p class="restaurants-card-subtitle">Cité Rouge</p>                            
-                            <i class="restaurants-heart fa-regular fa-heart"></i>
+                    <a class="restaurants__card__link" href="Menu/Menu-À-la-française.html">                        
+                        <img class="restaurants__img" src="Images-et-textes-Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                        <div class="restaurants__card__description">                               
+                            <div class="restaurants__card__txt">                                                       
+                                <h3 class="restaurants__card__title">À la française</h3>
+                                <p class="restaurants__card__subtitle">Cité Rouge</p>   
+                            </div>
+                            <div class="restaurants__card__heart"> 
+                                <i class="restaurants__heart far fa-heart"></i> 
+                                <i class="restaurants__heart--full fas fa-heart"></i> 
+                            </div>                      
                         </div>
                     </a>
                     </div>
                 </article>      
-                <article class="restaurants-card">
-                    <a class="restaurants-card-link" href="pages/Menu-Le-délice-des-sens.html">                        
-                        <img class="restaurants-img" src="Images-et-textes-Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
-                        <div class="restaurants-card-description">                                                          
-                            <h3 class="restaurants-card-title">Le délice des sens</h3>
-                            <p class="restaurants-card-subtitle">Folie-Méricourt</p>   
-                            <i class="restaurants-heart fa-regular fa-heart"></i>                      
+                <article class="restaurants__card">
+                    <a class="restaurants__card__link" href="Menu/Menu-Le-délice-des-sens.html">                        
+                        <img class="restaurants__img" src="Images-et-textes-Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                        <div class="restaurants__card__description">   
+                            <div class="restaurants__card__txt">                                                       
+                                <h3 class="restaurants__card__title">Le délice des sens</h3>
+                                <p class="restaurants__card__subtitle">Folie-Méricourt</p>   
+                            </div>
+                            <div class="restaurants__card__heart"> 
+                                <i class="restaurants__heart far fa-heart"></i> 
+                                <i class="restaurants__heart--full fas fa-heart"></i> 
+                            </div>                                                                                            
                         </div>
                     </a>
                 </article>      
@@ -97,12 +131,12 @@
 
     </main>
     <footer class="footer">
-        <h4 class="footer-tittle">ohmyfood</h4>
-        <nav class="footer-link">
-            <a class="footer-link-2" href=""> <i class="fa-solid fa-utensils"></i> Proposer un restaurant </a>
-            <a class="footer-link-2" href=""><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-            <a class="footer-link-2" href="">Mentions légales</a>
-            <a class="footer-link-2" href="">Contact</a>
+        <h4 class="footer__tittle">ohmyfood</h4>
+        <nav class="footer__link">
+            <a class="footer__link__2" href="#"> <i class="fa-solid fa-utensils"></i> Proposer un restaurant </a>
+            <a class="footer__link__2" href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+            <a class="footer__link__2" href="#">Mentions légales</a>
+            <a class="footer__link__2" href="mailto:kevin.niget@gmail.com">Contact</a>
         </nav>
     </footer>
 </body>

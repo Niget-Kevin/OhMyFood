@@ -1,0 +1,25 @@
+.header {
+    @extend %flex-center;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    animation: z-index 0ms 3500ms linear backwards;
+}
+
+.header__logo {
+    margin:22px 0px 13px 0px;
+    height: 30px;
+}
+
+.header__restaurant{
+   display: flex;
+   margin: 13px auto 14px 17px;
+   position: relative;
+
+}
+.header__restaurant__logo{
+    margin: auto;
+}
+.return {
+    @extend %flex-center;
+    text-decoration: none;
+    color: $txt-black;
+}
