@@ -1,0 +1,16 @@
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+%hero-btn{
+    border-radius: 25px;
+    background: $btn-gradient;
+    width: 218px;
+    height: 50px;
+    color:$txt-white;
+    @extend %flex-center;
+    text-decoration: none;
+}
