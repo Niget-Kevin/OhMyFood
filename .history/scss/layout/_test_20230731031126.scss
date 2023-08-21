@@ -1,0 +1,6 @@
+.restaurants-heart:active {
+    background-color: $btn-gradient;
+    grid-area: 1/2;
+    transition: color 0.2s ease-in-out;
+}
+.restaurants-heart:hover 

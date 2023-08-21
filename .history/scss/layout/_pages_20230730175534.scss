@@ -1,0 +1,20 @@
+.restaurant-main{
+    gap: 40px;
+    padding: 20px;
+    background-color: $bg-light-gray;
+    position: absolute;
+}
+
+.restaurant-img{
+    object-fit: cover;
+    width: 100%;
+    height: 275px;
+    position: relative;
+    border-radius: 0 0 -24px -24px;
+}
+
+.restaurant-title-h1 {
+    font-family: $Shrikhand;
+    font-weight: 400;
+}
+

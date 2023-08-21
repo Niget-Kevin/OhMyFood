@@ -1,0 +1,18 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 22px;
+    color:white;
+}
+.footer-img{
+    font-size: -10px;
+   
+}
+
+
+.footer-a {
+    display: flex;
+    flex-direction: column;  
+    gap: 7px;
+    text-decoration: none;
+}

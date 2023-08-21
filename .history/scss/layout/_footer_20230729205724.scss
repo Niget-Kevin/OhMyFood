@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 22px;
+    color:white;
+    background-color:$dark-grey;
+    gap: 16px;
+}
+.footer-tittle {
+    font-family: $Shrikhand;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;  
+    gap: 7px;
+    
+}
+.footer-link-2 {
+    text-decoration: none;
+    color:white;
+}

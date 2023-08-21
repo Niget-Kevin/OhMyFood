@@ -1,0 +1,13 @@
+.restaurants-heart:active {
+    
+.restaurants-heart {
+    padding: 0;
+    border:0px;
+    background-color:$bg-crd;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    &:active{
+        
+    }
+}

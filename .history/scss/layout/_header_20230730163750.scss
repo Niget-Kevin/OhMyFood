@@ -1,0 +1,17 @@
+.header {
+    @extend %flex-center;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.header-logo {
+    margin:22px 0px 13px 0px;
+    height: 30px;
+}
+
+.header-restaurant{
+   display: flex;
+   margin: 14px
+}
+.header-restaurant-logo{
+    @extend %flex-center;
+}
