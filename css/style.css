@@ -474,19 +474,14 @@
 /*heart*/
 .restaurants__heart--full {
   color: transparent;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   -webkit-background-clip: text;
           background-clip: text;
   opacity: 0;
-  transition: opacity 0.7s ease;
+  transition: opacity 0.9s ease;
 }
-
-.restaurants__card__heart:hover .restaurants__heart--full {
+.restaurants__heart--full:hover {
   opacity: 1;
-}
-
-.restaurants__card__heart:hover .restaurants__heart {
-  opacity: 0;
 }
 
 /*botton*/
@@ -494,8 +489,8 @@ button {
   background-color: white;
 }
 
-.hero__btn:hover, .menu__btn:hover {
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+.btn:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.45);
   opacity: 0.8;
 }
 
@@ -504,7 +499,7 @@ button {
   flex: 1;
 }
 
-.menu__card {
+.card {
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   animation-fill-mode: both;
   transform: scale(0);
@@ -520,10 +515,9 @@ button {
   align-items: center;
   justify-content: center;
   transition-duration: 0.5s;
-  transform: scale(100%);
 }
 
-.menu__card:hover .menuItem__confirmation {
+.card:hover .menuItem__confirmation {
   margin-right: -1rem;
 }
 

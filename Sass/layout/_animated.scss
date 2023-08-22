@@ -2,29 +2,23 @@
 
 .restaurants__heart--full {
   color: transparent; 
-  background-image: $btn-gradient;
+  background: $btn-gradient;
   background-clip: text;
   opacity: 0;
-  transition: opacity 0.70s ease;
+  transition: opacity .90s ease;
+  &:hover{
+    opacity: 1;
+  }
 }
-
- .restaurants__card__heart:hover .restaurants__heart--full {
-  opacity: 1;
- }
-
- .restaurants__card__heart:hover .restaurants__heart {
-  opacity: 0;
- }
-
           /*botton*/
 
 button {
   background-color: $btn-color;
 }
 
-.hero__btn,.menu__btn {
+.btn{
     &:hover {
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.45);
         opacity: 0.8;      
     }
 }
@@ -34,7 +28,7 @@ button {
 .card__txt {
   flex: 1;
 }
-.menu__card {  
+.card {  
    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
    animation-fill-mode: both;
    transform: scale(0);   
@@ -49,10 +43,9 @@ button {
     align-items:center;
     justify-content:center;
     transition-duration: 0.5s;
-    transform: scale(100%);
   }
 
-  .menu__card:hover .menuItem__confirmation {
+  .card:hover .menuItem__confirmation {
     margin-right: -1rem;    
   }
 
@@ -109,7 +102,6 @@ button {
   
 }
 
-
 body .loading_page {  
   box-sizing: border-box;
   height: 100%;
@@ -126,7 +118,6 @@ body .loading_page {
   animation: opacity_reverse 500ms 3000ms linear both;
   background-color: white;
 }
-
 
 body .loading_page .container {
   box-sizing: border-box;
