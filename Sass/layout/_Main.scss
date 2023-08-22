@@ -7,7 +7,9 @@
     margin: 0;
     padding: 0;
 }
-
+h1 {
+  font-family: Shrikhand;
+}
 .body {
   min-width: 375px; 
   font-family: roboto;
@@ -83,21 +85,21 @@
     margin: 48px 20px 68px 33px;
     
     @include media-min("tablet-up"){
-        @include grid-center;
-
-        &__title{
-            
-            @include grid-center;
-        }
+        @include grid-center;       
     }
 
     &__title{
         margin-bottom: 34px;
+        font-size: 24px;
 
     @include media-min("tablet-up"){
         justify-content: flex-start;
         margin: 50px 0px;
-        
+        @include grid-center;        
+        }
+
+    @include media-min("desktop-up"){
+        justify-content: flex-start
         }
     }
 }
@@ -105,9 +107,11 @@
 .step {
     display: grid;
     gap: 24px;
+    
     @include media-min("tablet-up"){
         @include grid-center;
     }
+
     @include media-min("desktop-up"){
         grid-template-columns: 1fr 1fr 1fr;        
     } 

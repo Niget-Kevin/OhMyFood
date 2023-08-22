@@ -68,6 +68,10 @@
   padding: 0;
 }
 
+h1 {
+  font-family: Shrikhand;
+}
+
 .body {
   min-width: 375px;
   font-family: roboto;
@@ -145,18 +149,22 @@
     display: grid;
     justify-content: center;
   }
-  .Fonctionnements__title {
-    display: grid;
-    justify-content: center;
-  }
 }
 .Fonctionnements__title {
   margin-bottom: 34px;
+  font-size: 24px;
 }
 @media screen and (min-width: 768px) {
   .Fonctionnements__title {
     justify-content: flex-start;
     margin: 50px 0px;
+    display: grid;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .Fonctionnements__title {
+    justify-content: flex-start;
   }
 }
 
