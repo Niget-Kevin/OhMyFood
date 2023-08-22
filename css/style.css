@@ -1,26 +1,4 @@
-@font-face {
-  font-family: "roboto";
-  src: url(../Font/Roboto-Regular.ttf);
-}
-@font-face {
-  font-family: "Shrikhand";
-  src: url(../Font/Shrikhand-Regular.ttf);
-}
-.hero {
-  background-color: #F6F6F6;
-}
-.hero__title {
-  font-size: 24px;
-}
-.hero__subtitle {
-  font-size: 18px;
-  color: #353535;
-}
-
-.fa-store {
-  color: #9356DC;
-}
-
+/* font-familly*/
 /* extend */
 .validation, .step__btn__number, .hero, .location, .return, .header, .validation .btn, .hero__btn {
   display: flex;
@@ -108,6 +86,7 @@
 }
 
 .hero {
+  background-color: #F6F6F6;
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
@@ -121,6 +100,7 @@
   width: 275px;
   height: 68px;
   flex-shrink: 0;
+  font-size: 24px;
 }
 @media screen and (min-width: 768px) {
   .hero__title {
@@ -133,6 +113,8 @@
   margin: 0;
   width: 315px;
   height: 46px;
+  font-size: 18px;
+  color: #353535;
 }
 @media screen and (min-width: 768px) {
   .hero__subtitle {
@@ -218,6 +200,10 @@
   font-size: 16px;
   color: black;
   margin: 0;
+}
+
+.fa-store {
+  color: #9356DC;
 }
 
 /* restaurants*/

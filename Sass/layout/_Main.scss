@@ -31,6 +31,7 @@
 
 .hero {
     @extend %flex-center;
+    background-color: $bg-light-gray;
     flex-direction: column;
     @include media-min("tablet-up"){
         gap: 18px;
@@ -42,6 +43,7 @@
         width: 275px;
         height: 68px;
         flex-shrink: 0;
+        font-size: 24px;
         @include media-min("tablet-up"){
             margin-top: 0;
             width: auto; 
@@ -53,6 +55,8 @@
         margin: 0;
         width: 315px;
         height: 46px;
+        font-size: 18px;
+        color: $dark-grey;
         @include media-min("tablet-up"){
             width: auto; 
             text-align: center;              
@@ -77,6 +81,7 @@
 
 .Fonctionnements{
     margin: 48px 20px 68px 33px;
+    
     @include media-min("tablet-up"){
         @include grid-center;
 
@@ -85,6 +90,7 @@
             @include grid-center;
         }
     }
+
     &__title{
         margin-bottom: 34px;
 
@@ -135,6 +141,10 @@
             margin: 0;
         }
     }
+}
+
+.fa-store {
+    color:$number-color;
 }
 
                         /* restaurants*/

@@ -28,34 +28,6 @@ $store:#9356DC;
 // card
 $bg-crd:white;
 
-
-
-@font-face {
-    font-family: 'roboto';
-    src: url(../Font/Roboto-Regular.ttf);
-}
-@font-face {
-    font-family: 'Shrikhand';
-    src: url(../Font/Shrikhand-Regular.ttf);
-}
+/* font-familly*/ 
 $roboto: roboto, sans-serif;
 $Shrikhand:Shrikhand,sans-serif;
-
-
-// font
-
-.hero {
-    background-color: $bg-light-gray;
-    &__title {
-        font-size: 24px;
-    }
-    &__subtitle {
-        font-size: 18px;
-        color: $dark-grey;
-    }
-}
-
-    .fa-store {
-        color:$number-color;
-    }
-
