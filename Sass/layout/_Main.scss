@@ -1,146 +1,233 @@
-
-* :root{
-    box-sizing: border-box
+                    /*general*/
+* :root {
+    box-sizing: border-box;    
 }
-.body{  
+
+.body,h1,h2,h3,p {
     margin: 0;
     padding: 0;
-    min-width: 320px;    
 }
-.body main {
-    // animation: z-index 0ms 3500ms linear both;
-}
-        //hero
+
+.body {
+  min-width: 375px; 
+  font-family: roboto;
+}    
+   
+
+                        /*hero*/
+       
 .location {
     @extend %flex-center;
-    gap: 17px;    
+    gap: 17px; 
+    font-weight: bold;
+    background-color: $bg-medium-gray;
+    color: $dark-grey;    
+    height: 50px;
+    &__title {
+        font-size: 16px;
+    }   
 }
+
 
 .hero {
     @extend %flex-center;
     flex-direction: column;
-    
+    @include media-min("tablet-up"){
+        gap: 18px;
+        padding: 30px 0px 30px 0px;        
+    }
+
     &__title {
-        margin-top: 39px;
-        margin-bottom: 0;
+        margin-top: 39px;        
         width: 275px;
         height: 68px;
         flex-shrink: 0;
+        @include media-min("tablet-up"){
+            margin-top: 0;
+            width: auto; 
+            height: auto;                   
+        }
     }
+
     &__subtitle {
         margin: 0;
         width: 315px;
         height: 46px;
+        @include media-min("tablet-up"){
+            width: auto; 
+            text-align: center;              
+            display: flex;   
+            align-items: center;             
+        }
     }
+
     &__btn {
         margin-top: 27px;
         margin-bottom: 57px;
         border-radius: 25px;          
         transition-duration: 300ms;
-        @extend %hero-btn  
-            
-    }
-
+        @extend %btn; 
+        @include media-min("tablet-up"){
+            margin: 0;            
+            }        
+    }    
 }
 
-    // onboarding
+                        /*Fonctionnements*/
 
-.onboarding__container {
+.Fonctionnements{
     margin: 48px 20px 68px 33px;
+    @include media-min("tablet-up"){
+        @include grid-center;
+
+        &__title{
+            
+            @include grid-center;
+        }
+    }
+    &__title{
+        margin-bottom: 34px;
+
+    @include media-min("tablet-up"){
+        justify-content: flex-start;
+        margin: 50px 0px;
+        
+        }
+    }
+}
+
+.step {
+    display: grid;
+    gap: 24px;
+    @include media-min("tablet-up"){
+        @include grid-center;
+    }
+    @include media-min("desktop-up"){
+        grid-template-columns: 1fr 1fr 1fr;        
+    } 
+
     &__btn{
-        display: grid;
-        gap: 24px;
-       }
+        gap: 27px;
+        position: relative;
+        display: flex;
+        align-items:center;
+        padding: 20px 30px;
+        border-radius:20px;
+        background-color: $bg-light-gray;
+        color:$dark-grey;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        
+        &__number{
+            @extend %flex-center;
+            position: absolute;
+            background-color:$number-color;
+            border-radius: 50%;
+            left: -12px;
+            width: 24px;
+            height: 24px;
+            color:$txt-white;            
+        }
+
+        &__txt{
+            font-weight: 500;
+            font-size: 16px;
+            color:$txt-black;
+            margin: 0;
+        }
+    }
 }
 
- .onboarding__btn {
-    gap: 27px;
-    position: relative;
-    display: flex;
-    align-items:center;
-    padding: 20px 30px;
-    border-radius:20px;
-    .number {
-        @extend %flex-center;
-        position: absolute;
-        background-color:$number-color;
-        border-radius: 50%;
-        left: -12px;
-        width: 24px;
-        height: 24px;
-    }
-    .onboarding__txt{
-        font-weight: 500;
-        font-size: 16px;
-        color:$txt-black;
-        margin: 0;
-    }
-}
-    // restaurants
+                        /* restaurants*/
 
-.restaurants__container{
+
+.restaurants{
     background-color:$bg-light-gray;
     display: grid;
-    padding: 60px 20px;
+    padding: 66px 20px;
     justify-content: space-around;
-    &__card {
+    @include media-min("desktop-up"){
+        padding: 30px 0px;
+    }
+
+    &__title{
+        margin-bottom: 20px;
+        @include media-min("desktop-up"){
+            margin-bottom: 30px;       
+        }
+    }
+
+    &__cards {
         display: grid;
         gap: 18px;
-        position: relative;
-        .restaurants__card{   
-            gap: 18px;
+        position: relative; 
+        @include media-min("desktop-up"){
+            grid-template-columns: 1fr 1fr;
+            gap: 50px 100px;
+            width: 100%;        
+        }        
+
+        &__article {               
             border-radius: 15px;
+            background-color:$bg-crd;            
         }    
     }
 }  
-.restaurants__card__link {  
+
+                        /* cards */
+
+.cards {  
     display: inline-grid;     
     position: relative; 
     width: 100%;
-    @media (min-width: 767.98px){
-        
-    }  
+    text-decoration: none;
+    color:$txt-black; 
+      
+
+    &__new{
+        padding: 7px 9px;
+        border-radius:2px;
+        position: absolute;
+        right: 12px;
+        top: 13px;
+        color: $txt-green;
+        background-color:$btn-new;
+    }
+    
+    &__img{
+        border-radius:15px 15px 0px 0px;
+        object-fit: cover;
+        width: 100%;
+        height: 18rem;
+    }
+    &__description{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 16px 25px 12px 13px;        
+    }
 } 
 
-.restaurants__new {
-    padding: 7px 9px;
-    border-radius:2px;
-    position: absolute;
-    right: 12px;
-    top: 13px;
-}
-.restaurants__img{
-    border-radius:15px 15px 0px 0px;
-    object-fit: cover;
-    width: 100%;
-    height: 18rem;
-}
-    
+             
 
-.restaurants__card__description{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 16px 25px 12px 13px;
-
-    
-    &__card__txt{
+.cards__txt {
         display: grid;
         gap: 5px;
-    }
-    .restaurants__card__title{
-        margin: 0;
-    }
-    .restaurants__card__subtitle{
-        margin: 0;
-    }
     
+    &__title{
+        margin: 0;
+    }
+
+    &__subtitle{
+        margin: 0;
+    }    
 }
+
+                /*heart*/
 
  .restaurants__card__heart {
     cursor: pointer;    
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     position: relative;
 }
@@ -153,62 +240,3 @@
 .fa-heart {
     font-size: 22px;
 }
-
-    //media queries tablets
-@media (min-width: 767.98px) {
-    .hero { 
-        gap: 18px;
-        padding: 30px 0px 30px 0px;
-        &__title, &__subtitle {
-            width: auto;
-            margin: 0;
-            height: auto;
-        }
-    }    
-    .hero__btn {
-        margin: 0px;
-        }
-    .onboarding__container,.onboarding__title, .restaurants__title, .menu__container,.restaurants__container__card {
-        display: grid;
-        justify-content: center;
-    }
-    .restaurants__container__card {
-        grid-template-columns: 1fr;
-        width: 535px;
-    }
-}
-    //media queries desktop
-@media (min-width: 1024px) {
-    .body {
-        justify-content: center;
-    }
-    .hero__container__btn{
-        margin: 0;
-    }
-    .onboarding__container{
-        gap: 25px;
-        margin: 50px 0px;
-    }
-    .onboarding__title{
-        justify-content: flex-start;
-        margin: 0;
-    }
-    .onboarding__container__btn{
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 36px;
-    }
-    .restaurants__container {
-        padding: 0;
-        
-    }
-    .restaurants__title{
-        justify-content: start;
-    }
-    .restaurants__container__card {
-        grid-template-columns: 1fr 1fr;
-        gap: 50px 100px;
-        width: 100%;
-    }
-  
-}
-

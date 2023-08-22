@@ -8,6 +8,7 @@ $dark-grey: #353535;
 // button
 $txt-green: #008766;
 $btn-new: #99E2D0;
+$btn-color: white;
 $btn-gradient:linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
 
 // background
@@ -42,22 +43,6 @@ $Shrikhand:Shrikhand,sans-serif;
 
 
 // font
-.body {    
-    font-family: roboto;
-    @media (min-width: 1024px) {        
-            justify-content: center;        
-    }
-}
-
-
-.location {
-    font-weight: bold;
-    background-color: $bg-medium-gray;
-    color: $dark-grey;
-    &__title {
-        font-size: 16px;
-    }
-}
 
 .hero {
     background-color: $bg-light-gray;
@@ -70,37 +55,7 @@ $Shrikhand:Shrikhand,sans-serif;
     }
 }
 
-.onboarding__btn {
-    color:$txt-black;
-    background-color: $bg-light-gray;
-    color:$dark-grey;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    .number {
-        color:$txt-white;
-    }
-    
-    .fa-solid {            
-        font-size: 24px;
-        color:$ico;
-        
-    }
     .fa-store {
         color:$number-color;
     }
-}
-.restaurants__container{
-    background-color:$bg-light-gray;
-    .restaurants__card {
-        background-color:$bg-crd;
-        .restaurants__card__link {  
-            text-decoration: none;
-            color:$txt-black;
-        }
-        .restaurants__new {
-            color: $txt-green;
-            background-color:$btn-new;
-        }
-    }
-}  
-
 

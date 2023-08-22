@@ -1,29 +1,27 @@
+        /*heart*/
 
 .restaurants__heart--full {
-    color: transparent; 
-    background-image: $btn-gradient;
-    -webkit-background-clip: text;
-    background-clip: text;
-    opacity: 0;
-    transition: opacity 0.70s ease;
+  color: transparent; 
+  background-image: $btn-gradient;
+  background-clip: text;
+  opacity: 0;
+  transition: opacity 0.70s ease;
 }
 
  .restaurants__card__heart:hover .restaurants__heart--full {
-     opacity: 1;
+  opacity: 1;
  }
+
  .restaurants__card__heart:hover .restaurants__heart {
-   opacity: 0;
+  opacity: 0;
  }
 
-
-// fin
-$button-color: white;
+          /*botton*/
 
 button {
-  background-color: $button-color;
+  background-color: $btn-color;
 }
 
-//btn
 .hero__btn,.menu__btn {
     &:hover {
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
@@ -31,7 +29,7 @@ button {
     }
 }
 
-//test
+          /*menu*/
 
 .card__txt {
   flex: 1;
@@ -55,8 +53,7 @@ button {
   }
 
   .menu__card:hover .menuItem__confirmation {
-    margin-right: -1rem;
-    
+    margin-right: -1rem;    
   }
 
   .menuItem__wrapIcon {
@@ -71,7 +68,7 @@ button {
   }
 
   .menuItem__icon{
-    color: #99E2D0;
+    color: $light-green;
    
   }
 .validation{
@@ -111,16 +108,8 @@ button {
   }
   
 }
-@keyframes appear {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
-// loading
+
 body .loading_page {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -130,43 +119,26 @@ body .loading_page {
   display: -ms-flexbox;
   display: flex;
   padding: 15px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: fixed;
   top: 0px;
   left: 0px;
- 
   background-color: transparent;
-  -webkit-animation: opacity_reverse 500ms 3000ms linear both;
   animation: opacity_reverse 500ms 3000ms linear both;
   background-color: white;
-  
 }
 
 
 body .loading_page .container {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 100%;
   width: 100%;  
   padding: 15px;  
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   background-color: #fff;
   border-radius: 30px;
@@ -180,11 +152,7 @@ body .loading_page .container .plate_out {
   height: 200px;
   width: 200px;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   background-color: #a9a9a9;
   border-radius: 50%;
@@ -194,11 +162,7 @@ body .loading_page .container .plate_out .plate_in {
   height: 185px;
   width: 185px; 
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: relative;
   background-color: #d3d3d3;
@@ -217,7 +181,6 @@ body .loading_page .container .plate_out .plate_in .food {
 }
 
 body .loading_page .container .plate_out .plate_in .hole_1 {
-  -webkit-animation: opacity 0ms 800ms linear both;
   animation: opacity 0ms 800ms linear both;
 }
 
@@ -227,7 +190,6 @@ body .loading_page .container .plate_out .plate_in .hole_1 {
 }
 
 body .loading_page .container .plate_out .plate_in .hole_2 {
-  -webkit-animation: opacity 0ms 1600ms linear both;
   animation: opacity 0ms 1600ms linear both;
 }
 
@@ -237,7 +199,6 @@ body .loading_page .container .plate_out .plate_in .hole_2 {
 }
 
 body .loading_page .container .plate_out .plate_in .hole_3 {
-  -webkit-animation: opacity 0ms 2400ms linear both;
   animation: opacity 0ms 2400ms linear both;
 }
 
@@ -247,8 +208,7 @@ body .loading_page .container .plate_out .plate_in .hole_3 {
 }
 
 body .index_main .result .container__result .restaurant__img a .enabled {
-    -webkit-animation: opacity 280ms 0ms linear alternate infinite both;
-    animation: opacity 280ms 0ms linear alternate infinite both;
+  animation: opacity 280ms 0ms linear alternate infinite both;
 }
 
 @keyframes opacity_reverse {
