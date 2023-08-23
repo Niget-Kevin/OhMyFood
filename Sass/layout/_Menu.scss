@@ -1,4 +1,6 @@
 
+
+
 .banner{
     object-fit: cover;
     width: 100%;
@@ -19,7 +21,7 @@
         max-width: 1050px;
         margin-left: auto;
         margin-right: auto; 
-}
+    }
 }
 
 .menu {
@@ -27,18 +29,17 @@
         display: flex;    
         gap: 44px;
         @include media-min("tablet-up"){
-            justify-content: center;
+        justify-content: center;
         }
         
         &__title{
-            font-family: $Shrikhand;
+        font-family: $Shrikhand;
         font-weight: 400;
         margin: 0;
-        font-size: 28px;
+        font-size: $heading-primary;
         }
     }    
 }
-
 
 .list {
     display: flex;
@@ -56,10 +57,11 @@
     position: relative;
     display: inline-block;
     font-size: 16px;
+    text-transform: uppercase;
     font-weight: 400; 
 
         &::after{
-            content: "";
+        content: "";
         position: absolute;
         left: 0;
         bottom: -7px;
@@ -69,7 +71,6 @@
         } 
     }
 }
-
 
 .card {
     display: flex;
@@ -84,28 +85,37 @@
     overflow: hidden;
 
     &__txt{
-        gap: 5px;    
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-        &__title,&__subtitle{
-        text-overflow: ellipsis;
-        overflow: hidden;
+    gap: 5px;    
+    white-space: nowrap;    
+    display: grid;        
+        &__title{
+            font-size: $heading-tertiary;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
+
+        &__subtitle{
+            font-size: $description ;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
     }
     
     &__money{
         display: flex;
     align-items: flex-end;
     font-weight: 700;
-    color: $dark-grey
+    color: $dark-grey;
+    font-size:$description;
     }
     
 }
 
-.validation .btn{
-    @extend %btn; 
+.validation{
+    @include flex-center;
+    
+    &__btn{
+        @extend %btn;
+    }            
 }
-
-

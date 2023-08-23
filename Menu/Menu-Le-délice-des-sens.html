@@ -15,15 +15,16 @@
         <a class="return" href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
         <img class="header__restaurant__logo" src="../Images-et-textes-Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"> 
     </header>
-    <img class="banner" src="../Images-et-textes-Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+    <img class="banner" src="../Images-et-textes-Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="menu Le délice des sens">
     <main class="main">
         <section class="menu">           
             <div class="menu__banner">  
                 <h1 class="menu__banner__title">Le délice des sens</h1> 
-                <div class="restaurants__card__heart"> 
-                    <i class="restaurants__heart fa-regular fa-heart"></i>
-                    <i class="restaurants__heart--full fa-solid fa-heart"></i>  
-                </div>  
+                <input type="checkbox" id="heart-toggle" class="heart-checkbox">
+                    <label for="heart-toggle" class="heart-label">
+                        <i class="heart__empty fa-regular fa-heart"></i>
+                        <i class="heart__full fa-solid fa-heart"></i>
+                    </label>   
             </div> 
         </section>
         <section class="list">
@@ -34,9 +35,9 @@
                     <p class="card__txt__subtitle">Assaisonné au yuzu</p>
                 </div>
                 <div class="card__money">25€</div> 
-                <div class="menuItem__confirmation">
-                    <div class="menuItem__wrapIcon">
-                        <i class="menuItem__icon fa-solid fa-check"></i>
+                <div class="cardItem">
+                    <div class="cardItem__wrapIcon">
+                        <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
             </article>  
             <article class="card anime__2">
@@ -45,9 +46,9 @@
                     <p class="card__txt__subtitle">Et sa farandole de petits légumes</p>
                 </div>
                 <div class="card__money">35€</div> 
-                <div class="menuItem__confirmation">
-                    <div class="menuItem__wrapIcon">
-                        <i class="menuItem__icon fa-solid fa-check"></i>
+                <div class="cardItem">
+                    <div class="cardItem__wrapIcon">
+                        <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
             </article> 
             <article class="card anime__3">
@@ -56,9 +57,9 @@
                     <p class="card__txt__subtitle">Et sa crème de truffe</p>
                 </div>
                 <div class="card__money">40€</div> 
-                <div class="menuItem__confirmation">
-                    <div class="menuItem__wrapIcon">
-                        <i class="menuItem__icon fa-solid fa-check"></i>
+                <div class="cardItem">
+                    <div class="cardItem__wrapIcon">
+                        <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
             </article>          
         </section>
@@ -70,9 +71,9 @@
                     <p class="card__txt__subtitle">Et sa crème de truffe</p>
                 </div>
                 <div class="card__money">40€</div> 
-                <div class="menuItem__confirmation">
-                    <div class="menuItem__wrapIcon">
-                        <i class="menuItem__icon fa-solid fa-check"></i>
+                <div class="cardItem">
+                    <div class="cardItem__wrapIcon">
+                        <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
             </article>  
             <article class="card anime__5">
@@ -81,9 +82,9 @@
                     <p class="card__txt__subtitle">Et ses légumes de saison</p>
                 </div>
                 <div class="card__money">35€</div> 
-                <div class="menuItem__confirmation">
-                    <div class="menuItem__wrapIcon">
-                        <i class="menuItem__icon fa-solid fa-check"></i>
+                <div class="cardItem">
+                    <div class="cardItem__wrapIcon">
+                        <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
             </article> 
             <article class="card anime__6">
@@ -92,9 +93,9 @@
                     <p class="card__txt__subtitle">Et sa purée de panais</p>
                 </div>
                 <div class="card__money">44€</div> 
-                <div class="menuItem__confirmation">
-                    <div class="menuItem__wrapIcon">
-                        <i class="menuItem__icon fa-solid fa-check"></i>
+                <div class="cardItem">
+                    <div class="cardItem__wrapIcon">
+                        <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
             </article>          
         </section>
@@ -106,9 +107,9 @@
                     <p class="card__txt__subtitle">Assaisonné à la truffe sur lit de caviar</p>
                 </div>
                 <div class="card__money">76€</div> 
-                <div class="menuItem__confirmation">
-                    <div class="menuItem__wrapIcon">
-                        <i class="menuItem__icon fa-solid fa-check"></i>
+                <div class="cardItem">
+                    <div class="cardItem__wrapIcon">
+                        <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
             </article>  
             <article class="card anime__8">
@@ -117,9 +118,9 @@
                     <p class="card__txt__subtitle">Revisitée</p>
                 </div>
                 <div class="card__money">22€</div> 
-                <div class="menuItem__confirmation">
-                    <div class="menuItem__wrapIcon">
-                        <i class="menuItem__icon fa-solid fa-check"></i>
+                <div class="cardItem">
+                    <div class="cardItem__wrapIcon">
+                        <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
             </article> 
             <article class="card anime__9">
@@ -128,22 +129,22 @@
                     <p class="card__txt__subtitle">À la noisette</p>
                 </div>
                 <div class="card__money">23€</div> 
-                <div class="menuItem__confirmation">
-                    <div class="menuItem__wrapIcon">
-                        <i class="menuItem__icon fa-solid fa-check"></i>
+                <div class="cardItem">
+                    <div class="cardItem__wrapIcon">
+                        <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
             </article>          
         </section>
         <section class="validation">
-            <a class="btn" href="">Commander</a>
+            <a class="validation__btn btn" href="#">Commander</a>
         </section>
     </main>
     <footer class="footer">
         <h4 class="footer__tittle">ohmyfood</h4>
         <nav class="footer__link">
-            <a class="footer__link__1" href=""> <i class="fa-solid fa-utensils"></i> Proposer un restaurant </a>
-            <a class="footer__link__1" href=""><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-            <a class="footer__link__2" href="">Mentions légales</a>
+            <a class="footer__link__1" href="#"> <i class="fa-solid fa-utensils"></i> Proposer un restaurant </a>
+            <a class="footer__link__1" href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+            <a class="footer__link__2" href="#">Mentions légales</a>
             <a class="footer__link__2" href="mailto:kevin.niget@gmail.com">Contact</a>
         </nav>
     </footer>

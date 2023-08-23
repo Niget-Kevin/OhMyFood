@@ -1,5 +1,6 @@
-                    /*general*/
-* :root {
+/*general*/
+
+* :root,.loading {
     box-sizing: border-box;    
 }
 
@@ -7,32 +8,28 @@
     margin: 0;
     padding: 0;
 }
-h1 {
-  font-family: Shrikhand;
-}
+
 .body {
   min-width: 375px; 
   font-family: roboto;
 }    
    
-
-                        /*hero*/
+/*hero*/
        
 .location {
-    @extend %flex-center;
+    @include flex-center;
     gap: 17px; 
     font-weight: bold;
     background-color: $bg-medium-gray;
     color: $dark-grey;    
     height: 50px;
     &__title {
-        font-size: 16px;
+    font-size: $heading-secondary;
     }   
 }
 
-
 .hero {
-    @extend %flex-center;
+    @include flex-center;
     background-color: $bg-light-gray;
     flex-direction: column;
     @include media-min("tablet-up"){
@@ -44,8 +41,7 @@ h1 {
         margin-top: 39px;        
         width: 275px;
         height: 68px;
-        flex-shrink: 0;
-        font-size: 24px;
+        font-size: $heading-quaternary;
         @include media-min("tablet-up"){
             margin-top: 0;
             width: auto; 
@@ -57,31 +53,46 @@ h1 {
         margin: 0;
         width: 315px;
         height: 46px;
-        font-size: 18px;
+        font-size: $heading-tertiary;
         color: $dark-grey;
         @include media-min("tablet-up"){
             width: auto; 
-            text-align: center;              
-            display: flex;   
-            align-items: center;             
+            @include flex-center;            
         }
     }
 
     &__btn {
-        margin-top: 27px;
-        margin-bottom: 57px;
-        border-radius: 25px;          
+        margin: 27px 0px 57px;                      
         transition-duration: 300ms;
         @extend %btn; 
         @include media-min("tablet-up"){
             margin: 0;            
             }        
-    }    
+    }  
+
 }
 
-                        /*Fonctionnements*/
+/*heart*/
 
-.Fonctionnements{
+.heart-label {
+    cursor: pointer;    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+    .heart__empty,.heart__full {    
+    position: absolute;     
+}
+
+.fa-heart {
+    font-size: 22px;
+}
+
+/*Operations*/
+
+.Operations{
     margin: 48px 20px 68px 33px;
     
     @include media-min("tablet-up"){
@@ -90,7 +101,7 @@ h1 {
 
     &__title{
         margin-bottom: 34px;
-        font-size: 24px;
+        font-size: $heading-quaternary;
 
     @include media-min("tablet-up"){
         justify-content: flex-start;
@@ -116,7 +127,7 @@ h1 {
         grid-template-columns: 1fr 1fr 1fr;        
     } 
 
-    &__btn{
+    &__btn{        
         gap: 27px;
         position: relative;
         display: flex;
@@ -128,7 +139,7 @@ h1 {
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
         
         &__number{
-            @extend %flex-center;
+            @include flex-center;
             position: absolute;
             background-color:$number-color;
             border-radius: 50%;
@@ -140,7 +151,7 @@ h1 {
 
         &__txt{
             font-weight: 500;
-            font-size: 16px;
+            font-size: $description;
             color:$txt-black;
             margin: 0;
         }
@@ -151,8 +162,7 @@ h1 {
     color:$number-color;
 }
 
-                        /* restaurants*/
-
+/* restaurants*/
 
 .restaurants{
     background-color:$bg-light-gray;
@@ -166,7 +176,8 @@ h1 {
     &__title{
         margin-bottom: 20px;
         @include media-min("desktop-up"){
-            margin-bottom: 30px;       
+        margin-bottom: 30px; 
+        font-size: $heading-quaternary;      
         }
     }
 
@@ -187,7 +198,7 @@ h1 {
     }
 }  
 
-                        /* cards */
+/* cards */
 
 .cards {  
     display: inline-grid;     
@@ -196,7 +207,6 @@ h1 {
     text-decoration: none;
     color:$txt-black; 
       
-
     &__new{
         padding: 7px 9px;
         border-radius:2px;
@@ -221,36 +231,17 @@ h1 {
     }
 } 
 
-             
-
 .cards__txt {
         display: grid;
         gap: 5px;
     
     &__title{
         margin: 0;
+        font-size: $heading-tertiary;
     }
 
     &__subtitle{
         margin: 0;
+        font-size: $paragraph;
     }    
-}
-
-                /*heart*/
-
- .restaurants__card__heart {
-    cursor: pointer;    
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-}
-
-
- .restaurants__heart,.restaurants__heart--full {    
-    position: absolute;     
-}
-
-.fa-heart {
-    font-size: 22px;
 }

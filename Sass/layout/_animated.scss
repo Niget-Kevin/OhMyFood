@@ -1,20 +1,35 @@
-        /*heart*/
+/*heart*/
 
-.restaurants__heart--full {
-  color: transparent; 
-  background: $btn-gradient;
-  background-clip: text;
-  opacity: 0;
-  transition: opacity .90s ease;
-  &:hover{
-    opacity: 1;
+.heart-checkbox {
+  display: none;
+}
+.heart {
+  &__full {
+      color: transparent;
+      background: $heart;
+      background-clip: text;    
+      transform: scale(0);
+      transition: transform .90s ease, color .90s ease;
+  }
+
+  &__empty {
+      opacity: 1;
+      transition: opacity .90s ease;
   }
 }
-          /*botton*/
 
-button {
-  background-color: $btn-color;
+.heart-checkbox:checked + .heart-label {
+  & .heart__full {
+      transform: scale(1);
+      color: $heart;
+  }
+
+  & .heart__empty {
+      opacity: 0;
+  }
 }
+
+/*botton*/
 
 .btn{
     &:hover {
@@ -23,51 +38,43 @@ button {
     }
 }
 
-          /*menu*/
+/*menu*/
 
-.card__txt {
-  flex: 1;
-}
 .card {  
-   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-   animation-fill-mode: both;
-   transform: scale(0);   
+   animation-timing-function:  cubic-bezier(0.5, 1.58, 0.34, 0.82);     
    animation-duration: 1s;
-   animation-name: appear;
-}
-.menuItem__confirmation {
-    background-color: $light-green;
-    margin: -1rem -5rem -1rem 1rem;
-    width: 4rem;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    transition-duration: 0.5s;
-  }
+   animation-name: appear;  
+    
+   &__txt{
+    width: 100%;
+   }
 
-  .card:hover .menuItem__confirmation {
-    margin-right: -1rem;    
-  }
-
-  .menuItem__wrapIcon {
-    height: 1.6rem;
-    width: 1.6rem;
-    background-color: white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius: 100px;
-    transition-duration: 0.5s;
-  }
-
-  .menuItem__icon{
-    color: $light-green;
-   
-  }
-.validation{
-    @extend %flex-center;
+   &:hover .cardItem{
+    margin-right: -1rem; 
+   }
 }
 
+.cardItem {    
+  background-color: $light-green;
+  width: 4rem;
+  @include flex-center;
+  transition: margin-right 0.5s ease; 
+  margin: -1rem -5rem -1rem 1rem;
+  margin-right: -5rem; 
+
+  &__wrapIcon {
+      height: 1.6rem;
+      width: 1.6rem;
+      background-color: $bg-crd;
+      @include flex-center;
+      border-radius: 100%;   
+  }
+
+  &__icon {
+      color: $light-green;
+  }
+}
+ 
 .anime {
   &__1{
     animation-delay: 0.1s;
@@ -101,121 +108,78 @@ button {
   }
   
 }
+/*loader*/
 
-body .loading_page {  
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;  
-  display: flex;
+.loading { 
+  @include flex-center;   
+  @extend %allpage;   
   padding: 15px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;  
   position: fixed;
-  top: 0px;
-  left: 0px;
-  background-color: transparent;
-  animation: opacity_reverse 500ms 3000ms linear both;
-  background-color: white;
+  top: 0px;   
+  animation: opacity_reverse 0.5s 3s linear both;
+  background-color: $bg-crd;
+
+  &__page{
+    @include flex-center; 
+    box-sizing: border-box;
+    @extend %allpage;  
+    padding: 15px;     
+    flex-direction: column;  
+    background-color: $bg-crd;
+    border-radius: 30px;  
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,.8);
+  }
 }
-
-body .loading_page .container {
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;  
-  padding: 15px;  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #fff;
-  border-radius: 30px;  
-  box-shadow: 0px 0px 12px 0px rgba(0,0,0,.8);
+.loading h2 {
+  margin-bottom: 20px;
+  font-family: Shrikhand;
+  font-size: 35px;
 }
-
-
-
-body .loading_page .container .plate_out {
+.plate {
   height: 200px;
   width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #a9a9a9;
+  @include flex-center;
+  background-color: $txt-dark-grey;
   border-radius: 50%;
+  &__in{
+    @include flex-center;
+    height: 92%;
+    width: 92%;   
+    position: relative;
+    background-color: $bg-medium-gray;
+    border-radius: 50%;
+  }
 }
 
-body .loading_page .container .plate_out .plate_in {
-  height: 185px;
-  width: 185px; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background-color: #d3d3d3;
-  border-radius: 50%;
+.fa-bread-slice {
+  font-size: 80px;
+  background-image: $number-color;  
 }
-body .loading_page .container .plate_out .plate_in .hole {
+
+.hole {
   height: 40px;
   width: 40px;
   position: absolute;
-  background-color: #d3d3d3;
+  background-color: $bg-medium-gray;
   border-radius: 50%;
-}
 
-body .loading_page .container .plate_out .plate_in .food {
-  font-size: 80px;
-}
-
-body .loading_page .container .plate_out .plate_in .hole_1 {
-  animation: opacity 0ms 800ms linear both;
-}
-
-body .loading_page .container .plate_out .plate_in .hole_1 {
-  top: 40px;
-  left: 40px;
-}
-
-body .loading_page .container .plate_out .plate_in .hole_2 {
-  animation: opacity 0ms 1600ms linear both;
-}
-
-body .loading_page .container .plate_out .plate_in .hole_2 {
-  top: 110px;
-  left: 75px;
-}
-
-body .loading_page .container .plate_out .plate_in .hole_3 {
-  animation: opacity 0ms 2400ms linear both;
-}
-
-body .loading_page .container .plate_out .plate_in .hole_3 {
-  top: 50px;
-  left: 110px;
-}
-
-body .index_main .result .container__result .restaurant__img a .enabled {
-  animation: opacity 280ms 0ms linear alternate infinite both;
-}
-
-@keyframes opacity_reverse {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-}
-}
-
-@keyframes opacity {
-  0% {
-    opacity: 0;
+  &__1{
+    animation: opacity 0ms 800ms linear both;
+    top: 40px;
+    left: 40px;
   }
 
-  100% {
-    opacity: 1;
-}
-}
+  &__2{
+    animation: opacity 0ms 1600ms linear both;
+    top: 110px;
+    left: 75px;
+  }
 
+  &__3{
+    animation: opacity 0ms 2400ms linear both;
+    top: 50px;
+    left: 110px;
 
+  }
+}
