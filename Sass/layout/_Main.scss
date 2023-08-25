@@ -88,13 +88,14 @@
 /*heart*/
 
 .heart-label {
-    cursor: pointer;    
+    cursor: pointer; 
+    bottom: 2rem;
+    right: 1.5rem;   
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    bottom: 2rem;
-    right: 1.5rem;
+    
 }
 
 .heart__empty,.heart__full {    
