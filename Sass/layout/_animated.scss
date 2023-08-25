@@ -5,53 +5,53 @@
 }
 .heart {
   &__full {
-      color: transparent;
-      background: $heart;
-      background-clip: text;    
-      transform: scale(0);
-      transition: transform .90s ease, color .90s ease;
+    color: transparent;
+    background: $heart;
+    background-clip: text;    
+    transform: scale(0);
+    transition: transform .90s ease;
   }
 
   &__empty {
-      opacity: 1;
-      transition: opacity .90s ease;
+    opacity: 1;
+    transition: opacity .90s ease;
   }
 }
 
 .heart-checkbox:checked + .heart-label {
   & .heart__full {
-      transform: scale(1);
-      color: $heart;
+    transform: scale(1);
+    color: $heart;
   }
 
   & .heart__empty {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
 /*botton*/
 
 .btn{
-    &:hover {
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.45);
-        opacity: 0.8;      
-    }
+  &:hover {    
+    box-shadow: 0rem 0.25rem 0.93rem 0rem  rgba(0, 0, 0, 0.45);
+    opacity: 0.8;      
+  }
 }
 
 /*menu*/
 
 .card {  
-   animation-timing-function:  cubic-bezier(0.5, 1.58, 0.34, 0.82);     
-   animation-duration: 1s;
-   animation-name: appear;  
-    
-   &__txt{
-    width: 100%;
-   }
+  animation-timing-function:  cubic-bezier(0.5, 1.58, 0.34, 0.82);     
+  animation-duration: 1s;
+  animation-name: appear;  
 
-   &:hover .cardItem{
+  &__txt{
+    width: 100%;
+  }
+
+  &:hover .cardItem {
     margin-right: -1rem; 
-   }
+  }
 }
 
 .cardItem {    
@@ -74,7 +74,14 @@
       color: $light-green;
   }
 }
- 
+
+@for $i from 1 through 10 {
+  .anime__#{$i} {
+     animation-delay: 0.1s * $i;
+  }
+}
+
+/*
 .anime {
   &__1{
     animation-delay: 0.1s;
@@ -108,15 +115,18 @@
   }
   
 }
+*/
+
+
 /*loader*/
 
 .loading { 
   @include flex-center;   
   @extend %allpage;   
-  padding: 15px;
+  padding: 0.93rem;
   flex-direction: column;  
   position: fixed;
-  top: 0px;   
+  top: 0rem;   
   animation: opacity_reverse 0.5s 3s linear both;
   background-color: $bg-crd;
 
@@ -124,24 +134,27 @@
     @include flex-center; 
     box-sizing: border-box;
     @extend %allpage;  
-    padding: 15px;     
+    padding: 0.93rem;     
     flex-direction: column;  
     background-color: $bg-crd;
-    border-radius: 30px;  
-    box-shadow: 0px 0px 12px 0px rgba(0,0,0,.8);
+    border-radius: 1.87rem;  
+    box-shadow: 3rem 3rem 0.75rem  rgba(0,0,0,.8);
   }
 }
+
 .loading h2 {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   font-family: Shrikhand;
-  font-size: 35px;
+  font-size: 2.18rem;
 }
+
 .plate {
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
   @include flex-center;
   background-color: $txt-dark-grey;
   border-radius: 50%;
+
   &__in{
     @include flex-center;
     height: 92%;
@@ -153,33 +166,33 @@
 }
 
 .fa-bread-slice {
-  font-size: 80px;
+  font-size: 5rem;
   background-image: $number-color;  
 }
 
 .hole {
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
   position: absolute;
   background-color: $bg-medium-gray;
   border-radius: 50%;
 
   &__1{
     animation: opacity 0ms 800ms linear both;
-    top: 40px;
-    left: 40px;
+    top: 2.5rem;
+    left: 2.5rem;
   }
 
   &__2{
     animation: opacity 0ms 1600ms linear both;
-    top: 110px;
-    left: 75px;
+    top: 6.87rem;
+    left: 4.68rem;
   }
 
   &__3{
     animation: opacity 0ms 2400ms linear both;
-    top: 50px;
-    left: 110px;
+    top: 3.12rem;
+    left: 6.87rem;
 
   }
 }

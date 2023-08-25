@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À la française</title>
     <script src="https://kit.fontawesome.com/f07153cf54.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet"></head>
 <body class="body">
     <header class="header__restaurant">
-        <a class="return" href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <a class="return" href="../index.html"><i class="fa-solid fa-arrow-left" aria-label="Retour à la page d'accueil"></i></a>
         <img class="header__restaurant__logo" src="../Images-et-textes-Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"> 
     </header>
-    <img class="banner" src="../Images-et-textes-Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="menu À la française">
+    <img class="banner" src="../Images-et-textes-Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image représentant le menu du restaurant À la française">
     <main class="main">
+
+            <!-- banner -->
+
         <section class="menu">           
             <div class="menu__banner">  
                 <h1 class="menu__banner__title">À la française</h1> 
                 <input type="checkbox" id="heart-toggle" class="heart-checkbox">
-                    <label for="heart-toggle" class="heart-label">
+                    <label for="heart-toggle" class="heart-label" aria-label="Marquer comme favori - bouton">
                         <i class="heart__empty fa-regular fa-heart"></i>
                         <i class="heart__full fa-solid fa-heart"></i>
                     </label>   
             </div> 
         </section>
-        <section class="list">
+
+            <!--Entrées -->
+
+        <section class="list">          
             <h2 class="list__title">Entrées</h2>
             <article class="card anime__1">
                 <div class="card__txt">
@@ -63,8 +67,12 @@
                     <div class="cardItem__wrapIcon">
                         <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
+                </div>
             </article>          
         </section>
+
+            <!--Plats -->
+
         <section class="list">
             <h2 class="list__title">Plats</h2>
             <article class="card anime__4">
@@ -77,6 +85,7 @@
                     <div class="cardItem__wrapIcon">
                         <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
+                </div>
             </article>  
             <article class="card anime__5">
                 <div class="card__txt">
@@ -88,6 +97,7 @@
                     <div class="cardItem__wrapIcon">
                         <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
+                </div>
             </article> 
             <article class="card anime__6">
                 <div class="card__txt">
@@ -99,8 +109,12 @@
                     <div class="cardItem__wrapIcon">
                         <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
+                </div>
             </article>          
         </section>
+
+            <!--Desserts -->
+
         <section class="list">
             <h2 class="list__title">Desserts</h2>
             <article class="card anime__7">
@@ -113,6 +127,7 @@
                     <div class="cardItem__wrapIcon">
                         <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
+                </div>
             </article>  
             <article class="card anime__9">
                 <div class="card__txt">
@@ -124,6 +139,7 @@
                     <div class="cardItem__wrapIcon">
                         <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
+                </div>
             </article> 
             <article class="card anime__10">
                 <div class="card__txt">
@@ -135,16 +151,23 @@
                     <div class="cardItem__wrapIcon">
                         <i class="cardItem__icon fa-solid fa-check"></i>
                     </div>
+                </div>
             </article>          
         </section>
+
+            <!-- validation -->
+
         <section class="validation">
             <a class="validation__btn btn" href="#">Commander</a>
         </section>
     </main>
+
+            <!-- footer -->
+
     <footer class="footer">
-        <h4 class="footer__tittle">ohmyfood</h4>
+        <h4 class="footer__title">ohmyfood</h4>
         <nav class="footer__link">
-            <a class="footer__link__1" href="#"> <i class="fa-solid fa-utensils"></i> Proposer un restaurant </a>
+            <a class="footer__link__1" href="#"> <i class="fa-solid fa-utensils"></i>Proposer un restaurant </a>
             <a class="footer__link__1" href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
             <a class="footer__link__2" href="#">Mentions légales</a>
             <a class="footer__link__2" href="mailto:kevin.niget@gmail.com">Contact</a>

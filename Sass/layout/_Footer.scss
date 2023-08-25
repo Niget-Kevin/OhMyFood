@@ -1,50 +1,54 @@
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
-    padding: 25px 22px;
+    padding: 1.56rem 1.37rem;
     color:$txt-white;
     background-color:$dark-grey;
-    gap: 16px;
+    gap: 1rem;
+
     @include media-min("tablet-up"){
         align-items: center;
     }
+
     @include media-min("desktop-up"){
         flex-direction: row-reverse;
         align-items: flex-end;
-        gap: 88px;
+        gap: 5.5rem;
 
-        &__tittle {
-            margin-left: 60px;
+        &__title {
+            margin-left: 3.75rem;
         }
     }
-    &__tittle {
+
+    &__title {
         font-family: $Shrikhand;
         font-size: $heading-tertiary;
         font-weight: 100;
         margin: 0;
-        width: 139px;
-        height: 27px;
+        width: 8.68rem;
+        height: 1.68rem;
     }
     
     &__link {
         display: flex;
         flex-direction: column;       
-        gap: 7px;
+        gap: 0.43rem;
         @include media-min("tablet-up"){
             flex-direction: row;
             align-items: flex-end; 
-            gap: 30px;
+            gap: 1.87rem;
         }
         
         &__1, &__2 {
         text-decoration: none;
         color:$txt-white; 
         font-family: $heading-secondary;
+        font-weight: 500;
         }
 
         &__1 {
-            font-weight: bold;
-            gap: 7px;  
+            
+            gap: 0.43rem;  
             display: flex;                     
         }
         

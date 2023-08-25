@@ -1,27 +1,6 @@
-/* extend */
-
-%btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 25px;
-  background: $btn-gradient;
-  width: 218px;
-  height: 50px;
-  color:$txt-white;  
-  text-decoration: none;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
-  font-size: 16px;
-}
-
-%allpage {
-  height: 100%;
-  width: 100%;
-}
-
 /*variable font-size*/
 
-$description: 15.043px; 
+$description: 15px; 
 $heading-secondary: 16px; 
 $paragraph: 17px; 
 $heading-tertiary: 18px; 
@@ -40,6 +19,25 @@ $branding: 30px;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/* extend */
+
+%btn {
+  @include flex-center;
+  border-radius: 1.56rem;
+  background: $btn-gradient;
+  width: 13.62rem;
+  height: 3.12rem;
+  color:$txt-white;  
+  text-decoration: none;
+  box-shadow: 0rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25);
+  font-size: $heading-secondary;
+}
+
+%allpage {
+  height: 100%;
+  width: 100%;
 }
 
 /*keyframes*/
