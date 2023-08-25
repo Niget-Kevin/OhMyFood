@@ -719,7 +719,7 @@
   flex-direction: column;
   background-color: white;
   border-radius: 1.87rem;
-  box-shadow: 3rem 3rem 0.75rem rgba(0, 0, 0, 0.8);
+  box-shadow: 0rem 0rem 0.75rem 0rem rgba(0, 0, 0, 0.8);
 }
 
 .loading h2 {
