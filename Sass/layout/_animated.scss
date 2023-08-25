@@ -18,10 +18,10 @@
   }
 }
 
-.heart-checkbox:checked + .heart-label {
+.heart-checkbox:checked + .heart-label,
+.heart-checkbox:checked + .heart-label-menu {
   & .heart__full {
-    transform: scale(1);
-    color: $heart;
+    transform: scale(1);    
   }
 
   & .heart__empty {
@@ -167,7 +167,6 @@
 
 .fa-bread-slice {
   font-size: 5rem;
-  background-image: $number-color;  
 }
 
 .hole {

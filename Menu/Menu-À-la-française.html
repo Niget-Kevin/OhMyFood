@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet"></head>
 <body class="body">
     <header class="header__restaurant">
-        <a class="return" href="../index.html"><i class="fa-solid fa-arrow-left" aria-label="Retour à la page d'accueil"></i></a>
+        <a class="return" href="../index.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></a>
         <img class="header__restaurant__logo" src="../Images-et-textes-Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"> 
     </header>
     <img class="banner" src="../Images-et-textes-Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image représentant le menu du restaurant À la française">
@@ -22,7 +22,7 @@
             <div class="menu__banner">  
                 <h1 class="menu__banner__title">À la française</h1> 
                 <input type="checkbox" id="heart-toggle" class="heart-checkbox">
-                    <label for="heart-toggle" class="heart-label" aria-label="Marquer comme favori - bouton">
+                    <label for="heart-toggle" class="heart-label-menu" aria-label="Marquer comme favori - bouton">
                         <i class="heart__empty fa-regular fa-heart"></i>
                         <i class="heart__full fa-solid fa-heart"></i>
                     </label>   
@@ -157,9 +157,9 @@
 
             <!-- validation -->
 
-        <section class="validation">
-            <a class="validation__btn btn" href="#">Commander</a>
-        </section>
+        <div class="validation">
+                <a class="validation__btn btn" href="#">Commander</a>
+            </div>  
     </main>
 
             <!-- footer -->

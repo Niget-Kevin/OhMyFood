@@ -23,6 +23,18 @@
     }
 }
 
+.heart-label-menu {
+    cursor: pointer;    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.heart__empty,.heart__full {    
+    position: absolute;     
+}
+
 .menu {
     &__banner{
         display: flex;    

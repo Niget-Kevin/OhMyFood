@@ -193,6 +193,8 @@
   justify-content: flex-end;
   align-items: center;
   position: relative;
+  bottom: 2rem;
+  right: 1.5rem;
 }
 
 .heart__empty, .heart__full {
@@ -316,7 +318,7 @@
   }
 }
 .restaurants__cards__article {
-  border-radius: 0.93;
+  border-radius: 0.93rem;
   background-color: white;
 }
 
@@ -412,7 +414,7 @@
 .footer__link__1, .footer__link__2 {
   text-decoration: none;
   color: white;
-  font-family: 16px;
+  font-size: 16px;
   font-weight: 500;
 }
 .footer__link__1 {
@@ -447,6 +449,18 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.heart-label-menu {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.heart__empty, .heart__full {
+  position: absolute;
 }
 
 .menu__banner {
@@ -554,11 +568,12 @@
   transition: opacity 0.9s ease;
 }
 
-.heart-checkbox:checked + .heart-label .heart__full {
+.heart-checkbox:checked + .heart-label .heart__full,
+.heart-checkbox:checked + .heart-label-menu .heart__full {
   transform: scale(1);
-  color: linear-gradient(0deg, rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
 }
-.heart-checkbox:checked + .heart-label .heart__empty {
+.heart-checkbox:checked + .heart-label .heart__empty,
+.heart-checkbox:checked + .heart-label-menu .heart__empty {
   opacity: 0;
 }
 
@@ -737,7 +752,6 @@
 
 .fa-bread-slice {
   font-size: 5rem;
-  background-image: #9356DC;
 }
 
 .hole {
