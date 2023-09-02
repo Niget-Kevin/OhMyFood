@@ -38,6 +38,7 @@
   100% {
     opacity: 0;
     display: none;
+    z-index: -1;
   }
 }
 @keyframes opacity {
@@ -275,7 +276,6 @@
 .step__btn__txt {
   font-weight: 500;
   font-size: 15px;
-  font-weight: 500;
   color: black;
   margin: 0;
 }
@@ -564,7 +564,6 @@
   transition: transform 0.9s ease;
 }
 .heart__empty {
-  opacity: 1;
   transition: opacity 0.9s ease;
 }
 

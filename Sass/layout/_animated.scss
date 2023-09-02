@@ -12,8 +12,7 @@
     transition: transform .90s ease;
   }
 
-  &__empty {
-    opacity: 1;
+  &__empty {    
     transition: opacity .90s ease;
   }
 }
@@ -127,8 +126,9 @@
   flex-direction: column;  
   position: fixed;
   top: 0rem;   
-  animation: opacity_reverse 0.5s 3s linear both;
+  animation: opacity_reverse 0.5s 3s linear both;  
   background-color: $bg-crd;
+  
 
   &__page{
     @include flex-center; 
@@ -138,9 +138,10 @@
     flex-direction: column;  
     background-color: $bg-crd;
     border-radius: 1.87rem;  
-    box-shadow: 0rem 0rem 0.75rem 0rem rgba(0,0,0,.8);
+    box-shadow: 0rem 0rem 0.75rem 0rem rgba(0,0,0,.8);   
   }
 }
+
 
 .loading h2 {
   margin-bottom: 1.25rem;

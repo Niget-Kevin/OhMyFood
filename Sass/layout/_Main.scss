@@ -2,6 +2,7 @@
 
 * :root,.loading {
     box-sizing: border-box;    
+    
 }
 
 .body,h1,h2,h3,p {
@@ -11,7 +12,7 @@
 
 .body {
     min-width: 375px; 
-    font-family: roboto;
+    font-family: roboto;   
 }    
 
 /*hero*/
@@ -167,8 +168,7 @@
 
         &__txt{
             font-weight: 500;
-            font-size: $description;
-            font-weight: 500;
+            font-size: $description;            
             color:$txt-black;
             margin: 0;
         }
